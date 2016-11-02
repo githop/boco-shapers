@@ -11,18 +11,37 @@
 
 <div class="boco">
 
+  <div class="ripple"></div>
 
   <div class="boco__logo">
+    <div class="flipper__container">
+      <div class="flipper__panel">
+        <div class="boco__nav">
+          <div>
+            <h4>Coming soon...</h4>
+          </div>
+          <div>
+            <a href="https://www.globalshapers.org/hubs/boulder" target="_blank">Boulder Global Shapers</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <img src="images/boco-logo.svg"/>
     <div class="logo__label"></div>
   </div>
 
-  <dev class="boco__nav">
-    Coming soon...
-    <a href="https://www.globalshapers.org/hubs/boulder" target="_blank">Boulder Global Shapers</a>
-  </dev>
+
+
+
 
 </div>
 
+<script src="bocoShapers.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var bsApp = new BocoShapers();
+    bsApp.setup();
+  });
+</script>
 </body>
 </html>
