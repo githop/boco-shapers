@@ -8,9 +8,9 @@ class BocoShapers  {
   bocoFlipper;
   ripple;
   constructor() {
-    this.bocoLogo = document.querySelector('.boco__logo');
-    this.bocoFlipper = document.querySelector('.flipper__panel');
-    this.ripple = document.querySelector('.ripple');
+    this.bocoLogo = <HTMLElement> document.querySelector('.boco__logo');
+    this.bocoFlipper = <HTMLElement> document.querySelector('.flipper__panel');
+    this.ripple = <HTMLElement> document.querySelector('.ripple');
   }
 
   setup() {
